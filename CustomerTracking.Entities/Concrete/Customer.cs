@@ -14,5 +14,6 @@ namespace CustomerTracking.Entities.Concrete
         public string? PhoneNumber { get; set; }
         public int PlateId { get; set; }
         public Plate? Plate { get; set; }
+        //pushtry
     }
 }
