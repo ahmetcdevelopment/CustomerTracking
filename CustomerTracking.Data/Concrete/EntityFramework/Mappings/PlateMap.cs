@@ -32,7 +32,7 @@ namespace CustomerTracking.Data.Concrete.EntityFramework.Mappings
             builder.Property(c => c.IsActive).IsRequired();
             builder.Property(c => c.IsDeleted).IsRequired();
             builder.Property(c => c.Note).HasMaxLength(500);
-            builder.HasOne<Customer>().WithOne().HasForeignKey(c=>c.PlateId).IsRequired();//bire bir ilişki kurulacak
+            //bire bir ilişki kurulacak
             builder.ToTable("Plates");
             builder.HasData(new Plate
             {
